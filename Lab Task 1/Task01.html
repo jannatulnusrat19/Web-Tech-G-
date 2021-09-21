@@ -11,25 +11,26 @@
             margin: 20px;
             border: 1px solid black;
             padding: 5px;
+            
         }
         .required:after{
             content: " *";
             color: red;
         }
-        label{
+        .DIinfo label{
             cursor: pointer;
             display: inline-block;
-            padding: 6px 9px;
+            padding: 3px 6px;
             text-align: right;
-            width: 100px;
+            width: 200px;
             vertical-align: top;
         }
         .additionalinfo label{
-            width: 40%;
+            width:350px;
          }
          .button{
              text-align: center;
-             border-radius: 2px;
+             width: 500px;
          }
         .starting {
             display: flex;
@@ -38,6 +39,11 @@
             padding-left: 20px;
 
         }
+        .newsletter {
+            margin-left: 100px; padding: 0%;
+            text-align: left;
+            
+        }
        
     </style>
 </head>
@@ -45,25 +51,25 @@
   <form action="">
       <p>🔴 _Denotes Required Information</p>
       <div class="starting">
-        <div><b>>1 Donation</b></div>
-        <div>>2 Confirmation</div>
-        <div>>3 Thank You</div>
+        <div><b><a href="#"> >1 Donation</a></b></div> 
+        <div><a href="#"> >2 Confirmation</a></div>
+        <div><a href="#">>3 Thank You</a></div>
       </div>
      
     <h2 style="color: red;">Donor Information</h2>
     <div class="DIinfo" style="padding: 15px;" >
         <label for="fname" class="required" >First Name</label>
-        <input type="text" id="fname" name="" required > <br>
+        <input type="text" id="fname" name=""  > <br>
         <label for="lname" class="required" >Last Name</label>
-        <input type="text" id="lname" name="" required > <br>
+        <input type="text" id="lname" name=""  > <br>
         <label for="company">Company</label>
         <input type="text" id="company" name="" > <br>
         <label for="address" class="required" >Address1</label>
-        <input type="text" id="address" name="" required> <br>
+        <input type="text" id="address" name="" > <br>
         <label for="address" >Address2</label>
         <input type="text" id="address" name=""> <br>
         <label for="city" class="required" >City</label>
-        <input type="text" id="city" name="" required> <br>
+        <input type="text" id="city" name="" > <br>
         <label for="state" class="required" >State</label>
         <select name="state" id="state">
             <option selected disabled hidden>Select a state</option>
@@ -72,7 +78,7 @@
             <option value="florida">Florida</option>
         </select> <br>
         <label for="zipcode" class="required" >Zip Code</label>
-        <input type="text" id="zipcode" name="" required> <br>
+        <input type="text" id="zipcode" name="" > <br>
         <label for="country" class="required" >Country</label>
         <select name="country" id="country">
             <option selected disabled hidden>Select a country</option>
@@ -100,6 +106,7 @@
           <input type="radio" id="other" name="doamount" value="Other">
           <label for="other" style="width: 20px;">Other</label>
           <div class="otheramount" style="padding-left: 30px;">
+        
             <label for="otheram">Other Amount $</label>
              <input type="text" id="other" name="">
           </div>
@@ -109,14 +116,16 @@
           <br>
             <label for="monthly"> <small>Monthly Credit Card $</small></label>
             <input type="text" id="free" name="monthly" value=""> <small>For</small><input type="text" id="free" name="month" value=""> <small>Months</small>
-          </div>
+        </div>
     <h2 style="color: red;">Honorarium and Memorial Donation Information</h2>
-          <label for="honor">I would like to make this</label>
+          <label for="honor" style="position: initial;">I would like to make this donation</label>
           <input type="radio" id="honor" name="" >
           <label for="To Honor">To Honor</label> <br>
-           <label for="donation">donation</label>
-          <input type="radio" id="memory" name="">
-          <label for="memory">In Memory of</label> <br>
+        
+          
+          <div class="DIinfo">
+            <input type="radio" id="memory" name="">
+            <label for="memory" >In Memory of</label> <br>
           <label for="name">Name</label>
           <input type="text" id="name" name=""> <br>
           <label for="acknowledge">Acknowlegde Donation to</label>
@@ -134,10 +143,13 @@
         </select> <br>
         <label for="zip">Zip</label>
         <input type="text" id="zip" name="">
+    </div>
     <h2 style="color: red;">Additional Information</h2>
          <p>Please enter your name,company or organization as you would like to appear in our publications:</p>
+         <div class="DIinfo">
          <label for="name">Name</label>
          <input type="text" id="name" name=""> <br>
+        </div>
          <div class="additionalinfo">
          <input type="checkbox" id="additionalInfo" name="" >
          <label for="additionalInfo">I would like my gift to remain anonymous. </label> <br>
@@ -148,10 +160,12 @@
              <label for="additionalInfo">Please save the cost of acknowledging this gift
                  by not mailing a thank you letter.</label> <br>
         </div>
+        <div class="DIinfo">
         <label for="comment">Comments <br> <small>(Please type any feedback or question here)</small></label>
         <textarea rows="5" cols="35"></textarea> <br>
+    </div>
         <label for="contact">How may we contact you?</label>
-        <div class="contact" style="margin-left: 100px; padding: 0%;">
+        <div class="contact" style="margin-left: 100px; padding: 0%; ">
             <input type="checkbox" id="contact" name="email" value=""> 
             <label for="contact">E-mail</label> <br>
             <input type="checkbox" id="contact" name="postal Mail" value=""> 
@@ -163,7 +177,7 @@
         </div>
          <p>I would like to receive newsletters and information about 
              special events by:</p>
-        <div class="newsletter" style="margin-left: 100px; padding: 0%;">
+        <div class="newsletter ">
             <input type="checkbox" id="contact" name="email" value=""> 
             <label for="contact">E-mail</label> <br>
             <input type="checkbox" id="contact" name="postal Mail" value=""> 
@@ -172,6 +186,8 @@
         <div class="additionalinfo">
             <input type="checkbox" id="volunteering">
             <label for="volunteering">I would like information about volunteering with the </label>
+             <br>
+            <textarea name="" id="" cols="90" rows="1"></textarea>
         </div>
         <div class="button">
              
