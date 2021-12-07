@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* text-decoration: none; */
+    list-style: none;
+    box-sizing: border-box;
+    
+
+} 
+/* for header property */
+.nav{
+    margin: 0px;
+    padding-left: 50px;
+    background: purple;
+    line-height: 80px;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    font-weight: bolder;
+ }
+ /* for the form heading  */
+.heading{
+    background-color: lightblue;
+    padding: 20px;
+    padding-top: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 500px;
+    text-align: center;   
+}
+/* for user login options  */
+.options{
+    text-align: center;
+    margin-left: 40px;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 40px;
+}
+/* for user login options  */
+.button{
+    margin-left: 0px;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    text-align: left;
+    
+    }
+.button:hover{
+background-color: yellow;
+color: red;
+}
+a.active{
+    color: blue;
+    }
+    /* to make responsive using media queries  */
+ @media  screen and (max-width:600px) {
+    .nav{
+        margin: 0px;
+        padding-left: 20px;
+        background: purple;
+        line-height: 50px;
+        width: 100%;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+     }
+     .heading{
+        background-color: lightblue;
+        padding: 10px;
+        padding-top: 30px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: 400px;
+        text-align: center;   
+    }
+    .options{
+        text-align: center;
+        margin-left: 40px;
+        text-decoration: underline;
+        font-weight: bolder;
+        margin: 20px;
+    }
+    .button{
+    
+        margin-left: 0px;
+        background-color: rebeccapurple;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        text-align: left;
+        
+        }
+ }   
