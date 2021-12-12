@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    margin: 0px;
+    padding-left: 50px;
+    background: purple;
+    line-height: 80px;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+body{
+background-color: lavender;
+}
+.details{
+background-color: powderblue;
+width: 60%;
+height: 70%;
+margin-top: 20px;
+margin-left: 350px;
+padding: 30px;
+}
+.error{
+color:red;
+}
+.button{
+background-color: rebeccapurple;
+color: white;
+padding: 5px;
+border: none;
+text-align: left;
+}
+.button:hover{
+background-color: yellow;
+color: red;
+}
+.required:after{
+    content: " *";
+    color: red;
+}

@@ -1,0 +1,18 @@
+/* for background-purple  */
+body{
+    background-color: purple;
+}
+/* for link color */
+a{
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+a:hover{
+   color:red;
+}
+/* for hover effect on button */
+.button:hover{
+    background-color: yellow;
+    color: red;
+}
